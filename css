@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    display: flex;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #8a1d01d5;
+    height: 22vh;
+  }
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  .nav-list li {
+    letter-spacing: 5px;
+    margin-left: 35px;
+  }
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+
+a{
+    color: #f76815;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2%;
+    justify-content:space-around;
+    
+}
