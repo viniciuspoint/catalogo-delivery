@@ -4,18 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VINAGRETE</title>
-    <link rel="shortcut icon" href="images/hamburguer-hotdog.png" type="">
+    <link rel="shortcut icon" href="images/hamburguer-hotdog.png">
     <link rel="stylesheet" href="hot.css">
-    <link rel="stylesheet" href="ms.js">
+    <script src="ms.js"></script>
 </head>
 <body>
-    <header>         
+    
+    <header>
         <nav>
-          <ul class="nav-list">
-            <li><a href="Hotsdogs.html">VINAGRETE</a></li>
+            <a class="logo" href="/">V I N A G R E T E</a>
+            <ul class="nav-list">
+                <li><a href="/">inicio</a></li>
+                <li><a href="/">sobre</a></li>
+                <li><a href="/">projetos</a></li>
+                <li><a href="/">contatos</a></li>
+            </ul>
         </nav>
     </header>
 
-    
+    <main>
+        <section>
+            <div class="image-gallery">
+                <div class="image-item">
+                    <img src="images/depositphotos_153710480-stock-photo-tasty-classic-traditional-american-hot.jpg" alt="Imagem 1">
+                    <div class="price">R$ 15,00</div>
+                    <button class="add-to-cart" data-name="Hot Dog Clássico" data-price="15.00">Adicionar ao Carrinho</button>
+                </div>
+                <div class="image-item">
+                    <img src="images/images.jpg" alt="Imagem 2">
+                    <div class="price">R$ 12,50</div>
+                    <button class="add-to-cart" data-name="Hot Dog Especial" data-price="12.50">Adicionar ao Carrinho</button>
+                </div>
+                <div class="image-item">
+                    <img src="images/pngtree-hot-dog-is-sitting-on-a-hot-dog-bun-picture-image_2639953.jpg" alt="Imagem 3">
+                    <div class="price">R$ 18,00</div>
+                    <button class="add-to-cart" data-name="Hot Dog Gourmet" data-price="18.00">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrinho de compras -->
+        <div id="cart" class="cart">
+            <h2>Carrinho de Compras</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total">
+                <strong>Total: R$ <span id="total-price">0.00</span></strong>
+            </div>
+            <button id="checkout" onclick="checkout()">Finalizar Compra</button>
+        </div>
+    </main>
+
+    <script src="ms.js"></script>
 </body>
 </html>
