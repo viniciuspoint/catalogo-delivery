@@ -52,27 +52,38 @@
 .image-item {
   text-align: center;
   width: 30%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  
+}
+
+.image-gallery {
+  margin-left: 100px;
+  margin-right: 10px;
+}
+
+.image-gallery button{
+  width: 50;
+  margin-left: 70px;
+  margin-right: 5px;
 }
 
 .image-item img {
-  width: 100%;
+  width: 150%;
   border-radius: 8px;
 }
 
 .price {
   margin-top: 10px;
-  font-size: 18px;
+  margin-left: 100px;
+  margin-right: 10px;
   font-weight: bold;
-  color: #ff6600;
+  color: #fc5102;
 }
-
 .add-to-cart {
   margin-top: 10px;
   padding: 10px;
-  background-color: #ff6600;
-  color: white;
+  background-color: #d8bfae;
+  color: rgb(253, 252, 252);
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -125,7 +136,7 @@
 footer {
   background-color: #c43a03;
   color: white;
-  padding: 20px 0;
+  padding: 40px ;
   text-align: center;
   font-size: 14px;
 }
@@ -171,6 +182,37 @@ footer {
   font-size: 12px;
 }
 
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 imagens por linha */
+  gap: 20px;
+  margin-top: 100px;
+}
+
+.image-item {
+  text-align: center;
+}
+
+.image-item img {
+  width: 200%;
+  height: auto;
+}
+
+
+.add-to-cart {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #eb8448;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.add-to-cart:hover {
+  background-color: #ce4404;
+}
 
 
 
+
+  
